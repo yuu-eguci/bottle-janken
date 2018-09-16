@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+/********************
+構造わかりやすさのための色つけ。消してOK。
+********************/
+
+/*body {
+    border:1px solid black;
+    background:lime;
+}
+div.outer {
+    background:gray;
+}
+div.inner_header {
+    background:red;
+    border:1px solid black;
+}
+div.inner_body {
+    background:green;
+}
+div.inner_footer {
+    background:blue;
+}*/
+
+/********************
+大まかな構造。
+********************/
+
+body {
+    width:240px;
+    height:320px;
+}
+
+div.outer {  /*スクロールバーが出たとき見えている範囲*/
+    width:225px;
+    height:305px;
+}
+
+div.inner_header {
+    height:60px;
+}
+
+div.inner_body {
+    height:185px;
+}
+
+div.inner_footer {
+    height:60px;
+}
+
+/********************
+細かな構造。
+********************/
+
+div.box_row {
+    overflow:hidden;
+}
+
+div.box_row_left {
+    float:left;
+}
+
+div.box_row_right {
+    float:right;
+}
+
+div.daisha_number {
+    height:30px;
+}
+
+div.daisha_list {
+    overflow:scroll;
+    width:225px;
+    height:155px;
+}
+
+/********************
+個別の装飾。
+********************/
+
+a {
+    text-decoration:none;
+}
+
+div.button {
+    background:#DBD9B5;
+    margin:2px 10px;
+    padding:0px 2px;
+    text-align:center;
+}
+
+div.message {
+    margin:5px;
+    font-size:80%;
+    border:1px solid black;
+}
+
+table.daisha_list {
+    width:100%;
+    border:1px dashed black;
+}
+
+table.daisha_list tr td {
+    height:1em;
+    border-bottom:1px solid black;
+}
+
+button.hand {
+    width:50px;
+    height:50px;
+    padding:0;
+    margin:0;
+    border:0;
+}
+
+span.draw {
+    text-shadow:black 1px 1px 0px, black -1px 1px 0px,
+                black 1px -1px 0px, black -1px -1px 0px;
+}
+
+span.lost {
+    text-shadow:blue 1px 1px 0px, blue -1px 1px 0px,
+                blue 1px -1px 0px, blue -1px -1px 0px;
+}
+
+span.won {
+    text-shadow:red 1px 1px 0px, red -1px 1px 0px,
+                red 1px -1px 0px, red -1px -1px 0px;
+    font-size:140%;
+}
+
+div.shelf {
+    margin:2px 10px;
+    padding:0px 2px;
+    text-align:center;
+    height:60px;
+}
